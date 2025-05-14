@@ -2,26 +2,26 @@
 # Site settings
 # -----------------------------------------------------------------------------
 author: Ben Lengerich
-name: STAT 479 PGMs
-title: Introduction to Probabilistic Graphical Models and Modern Probabilistic AI
+name: STAT 453
+title: Introduction to Deep Learning and Generative Models
 email: TBD@wisc.edu
 description: >
-  10-708 - Probabilistic Graphical Models - University of Wisconsin-Madison - Spring 2025
+  STAT 453 - University of Wisconsin-Madison - Fall 2025
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url: https://lengerichlab.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-repository: LengerichLab/pgm-spring-2025
+repository: LengerichLab/dgm-spring-2025
 
-icon: uw-crest-color-web-digital.svg 
+icon: uw-crest-color-web-digital.svg
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 github_username: LengerichLab
-google_analytics: 
-youtube_channel: 
+google_analytics:
+youtube_channel:
 rss:  # notes rss
 
 # -----------------------------------------------------------------------------
