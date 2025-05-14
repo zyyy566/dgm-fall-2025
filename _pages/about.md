@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: <b>D</b>eep <b>Learning</b> and <b>Generative</b> <b>M</b>odels
+title: Intro to <b>D</b>eep Learning and <b>G</b>enerative <b>M</b>odels
 description: STAT 453 • Fall 2025 • UW-Madison
 logo: uw-logo.png
 news: false
