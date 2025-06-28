@@ -14,13 +14,13 @@ title: Logistics
 - **Meeting Times:** Monday/Wednesday 8:00-9:15 AM
 - **Location:** TBD.
 - **Instructor:** Prof. Ben Lengerich, lengerich@wisc.edu
-- **TA:** TBD.
+- **TA:** Baiheng Chen, TBD
 
 ***
 
 ### Course Materials
 
-- **Website:** [Course Website](https://lengerichlab.github.io/dgm-fall-2025)
+- **Website:** [Course Website](https://adaptinfer.org/dgm-fall-2025)
 - **Submission Platform:** Canvas
 
 ***
