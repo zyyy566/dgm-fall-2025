@@ -1,19 +1,18 @@
 .pagination {
   font-size: 1rem;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .pagination {
-        font-weight: 100;
-    }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .pagination {
+    font-weight: 100;
+  }
 }
 
-.pagination a, .pagination .disabled {
+.pagination a,
+.pagination .disabled {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -24,7 +23,8 @@
   padding: 1em 1.5em;
 }
 
-.pagination .disabled, .pagination .pagination-meta {
+.pagination .disabled,
+.pagination .pagination-meta {
   opacity: 0.5;
 }
 
@@ -32,7 +32,8 @@
   overflow: hidden;
 }
 
-.pagination a:hover, .pagination a:focus {
+.pagination a:hover,
+.pagination a:focus {
   background: white;
   color: $theme-color;
 }

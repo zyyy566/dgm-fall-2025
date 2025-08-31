@@ -1,13 +1,13 @@
 Instructors:
-    - name: Benjamin Lengerich
-      email: lengerich@wisc.edu
-      url: https://adaptinferorg/
-      office-hours: "TBD"
-      image: staff/lengerich.jpg
+  - name: Benjamin Lengerich
+    email: lengerich@wisc.edu
+    url: https://adaptinfer.org/
+    office-hours: "TBD"
+    image: staff/lengerich.jpg
 
 TA:
-    - name: Baiheng Chen
-      email: bchen342@wisc.edu
-      url:
-      office-hours: "TBD"
-      image:
+  - name: Baiheng Chen
+    email: bchen342@wisc.edu
+    url:
+    office-hours: "TBD"
+    image:

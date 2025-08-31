@@ -1,0 +1,158 @@
+- title: "Module 1: Introduction and Foundations"
+
+- date: 9/3
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>Course Introduction, Introduction to DL</strong>
+  slides: ""
+  notes: ""
+  readings:
+  logistics:
+
+- date: 9/8
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>A Brief History of DL</strong>
+  slides: ""
+  notes: ""
+  logistics: HW1 Out
+
+- date: 9/10
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>Statistics / linear algebra / calculus review</strong>
+  slides: ""
+  notes: ""
+  readings:
+
+- date: 9/15
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>Single-layer networks</strong>
+  slides: ""
+  notes: ""
+  readings:
+  logistics:
+
+- date: 9/17
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>Parameter Optimization and Gradient Descent</strong>
+  slides: ""
+  readings:
+  logistics: HW2 Out
+
+- date: 9/22
+  lecturer: Prof. Lengerich
+  title: >
+    <strong>Automatic differentiation with PyTorch</strong>
+  slides: ""
+  readings:
+
+- date: 9/24
+  lecturer: Prof. Lengerich
+  title: <strong>Cluster and cloud computing resources</strong>
+
+- title: "Module 2: Neural Networks"
+
+- date: 9/29
+  lecturer: Prof. Lengerich
+  title: <strong>Multinomial logistic regression</strong>
+
+- date: 10/1
+  lecturer: Prof. Lengerich
+  title: <strong>Multi-layer perceptrons and backpropagation</strong>
+  logistics: HW3 Out
+
+- date: 10/6
+  lecturer: Prof. Lengerich
+  title: <strong>Regularization</strong>
+
+- date: 10/8
+  lecturer: Prof. Lengerich
+  title: <strong>Normalization / Initialization</strong>
+
+
+- date: 10/13
+  lecturer: Prof. Lengerich
+  title: <strong>Optimization, Learning Rates</strong>
+
+- date: 10/15
+  lecturer: Prof. Lengerich
+  title: <strong>CNNs</strong>
+  logistics: Project Proposal Due
+
+
+- date: 10/20
+  lecturer: Prof. Lengerich
+  title: <strong>Review</strong>
+
+- date: 10/22
+  title: <strong>Midterm Exam</strong>
+
+- title: "Module 3: Intro to Generative Models"
+
+
+- date: 10/27
+  lecturer: Prof. Lengerich
+  title: <strong>A Linear Intro to Generative Models</strong>
+
+- date: 10/29
+  lecturer: Prof. Lengerich
+  title: <strong>Factor Analysis, Autoencoders, VAEs</strong>
+
+- date: 11/3
+  lecturer: Prof. Lengerich
+  title: <strong>Generative Adversarial Networks</strong>
+
+- date: 11/5
+  lecturer: Prof. Lengerich
+  title: <strong>Diffusion Models</strong>
+  logistics: Project Midway Report Due
+
+- title: "Module 4: Large Language Models"
+
+- date: 11/10
+  lecturer: Prof. Lengerich
+  title: <strong>Sequence Learning with RNNs</strong>
+  logistics: HW4 Out
+
+- date: 11/12
+  lecturer: Prof. Lengerich
+  title: <Strong>Attention, Transformers</strong>
+
+- date: 11/17
+  lecturer: Prof. Lengerich
+  title: <strong>GPT Architectures</strong>
+
+- date: 11/19
+  lecturer: Prof. Lengerich
+  title: <strong>Unsupervised Training of LLMs</strong>
+
+- date: 11/24
+  lecturer: Prof. Lengerich
+  title: <strong>Supervised Fine-tuning of LLMs</strong>
+  logistics: HW5 Out
+
+- date: 11/26
+  lecturer: Prof. Lengerich
+  title: <strong>Prompts and In-context learning</strong>
+
+- date: 12/1
+  lecturer: Prof. Lengerich
+  title: <strong>Foundation models, alignment, explainability</strong>
+
+- date: 12/3
+  lecturer: Prof. Lengerich
+  title: <strong>Open directions in LLM research</strong>
+
+- title: "Module 5: Student Presentations"
+
+- date: 12/8
+  title: <strong>Project Presentations</strong>
+
+- date: 12/10
+  title: <strong>Project Presentations</strong>
+
+- date: 12/17
+  title: <strong>Final Exam</strong>

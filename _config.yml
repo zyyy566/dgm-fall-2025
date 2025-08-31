@@ -21,7 +21,7 @@ icon: uw-crest-color-web-digital.svg
 github_username: AdaptInfer
 google_analytics:
 youtube_channel:
-rss:  # notes rss
+rss: # notes rss
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -36,17 +36,17 @@ paginate_path: /notes/page:num/
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer: "Newer"
+    older: "Older"
 
 # Comments
 disqus_shortname: # put your disqus shortname
 
 # Optional features
-show_social_icons:  true
-enable_anchorjs:    true
-enable_latexjs:     true
-enable_katex:       true
+show_social_icons: true
+enable_anchorjs: true
+enable_latexjs: true
+enable_katex: true
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -70,14 +70,14 @@ markdown: kramdown
 highlighter: rouge
 
 # Includes & excludes
-include: ['_pages']
+include: ["_pages"]
 exclude: [vendor]
 
 # Plug-ins
 plugins:
-    - jekyll-email-protect
-    - jekyll-paginate
-    - jemoji
+  - jekyll-email-protect
+  - jekyll-paginate
+  - jemoji
 
 # -----------------------------------------------------------------------------
 # Other settings
