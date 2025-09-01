@@ -9,16 +9,16 @@ lecturers:
     url: "https://lengerichlab.github.io/"
 
 authors:
-  - name: Author 1  # author's full name
-    url: "#"  # optional URL to the author's homepage
+  - name: Author 1 # author's full name
+    url: "#" # optional URL to the author's homepage
   - name: Author 2
     url: "#"
   - name: Author 3
     url: "#"
 
 editors:
-  - name: Editor 1  # editor's full name
-    url: "#"  # optional URL to the editor's homepage
+  - name: Editor 1 # editor's full name
+    url: "#" # optional URL to the editor's homepage
 
 abstract: >
   An example abstract block
@@ -50,7 +50,7 @@ Here is an example:
 Note that [KaTeX](https://khan.github.io/KaTeX/) is work in progress, so it does not support the full range of math expressions as, say, [MathJax](https://www.mathjax.org/).
 Yet, it is [blazing fast](http://www.intmath.com/cg5/katex-mathjax-comparison.php).
 
-***
+---
 
 ## Figures
 
@@ -83,6 +83,7 @@ For more on this, see layouts section below.
 Also, the size of the images themselves is controlled by `class="one"`, `class="two"`, or `class="three"` which corresponds to 1/3, 2/3, 3/3 of the full horizontal space, respectively.
 
 Here is the same example, but each image is captioned separately:
+
 <figure id="example-figure" class="l-body-outset">
   <div class="row">
     <div class="col one">
@@ -123,7 +124,7 @@ Here is an example that shows how the figures of different sizes are aligned:
   </figcaption>
 </figure>
 
-***
+---
 
 ## Citations
 
@@ -137,14 +138,14 @@ If you have an appendix, a bibliography is automatically created and populated i
 Distill chose a numerical inline citation style to improve readability of citation dense articles and because many of the benefits of longer citations are obviated by displaying more information on hover.
 However, we consider it good style to mention author last names if you discuss something at length and it fits into the flow well — the authors are human and it’s nice for them to have the community associate them with their work.
 
-***
+---
 
 ## Footnotes
 
 Just wrap the text you would like to show up in a footnote in a `<d-footnote>` tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote>
 
-***
+---
 
 ## Code Blocks
 
@@ -159,7 +160,7 @@ For larger blocks of code, add a `block` attribute:
   }
 </d-code>
 
-***
+---
 
 ## Layouts
 
@@ -205,7 +206,7 @@ It does not interrupt the normal flow of `.l-body` sized text except on mobile s
   <p>.l-gutter</p>
 </div>
 
-***
+---
 
 ## Arbitrary $$\LaTeX$$ (experimental)
 
@@ -221,9 +222,9 @@ It is possible to input any UTF-8 character either directly or by character code
 using one of the following:
 
 \begin{itemize}
-    \item \texttt{\textbackslash symbol\{"00A9\}}: \symbol{"00A9}
-    \item \verb|\char"A9|: \char"A9
-    \item \verb|^^A9 or ^^^^00A9|: ^^A9 or ^^^^00A9
+\item \texttt{\textbackslash symbol\{"00A9\}}: \symbol{"00A9}
+\item \verb|\char"A9|: \char"A9
+\item \verb|^^A9 or ^^^^00A9|: ^^A9 or ^^^^00A9
 \end{itemize}
 
 \bigskip
@@ -231,7 +232,7 @@ using one of the following:
 \noindent
 Special characters, like those:
 \begin{center}
-\$ \& \% \# \_ \{ \} \~{} \^{} \textbackslash % \< \>  \"   % TODO cannot be typeset
+\$ \& \% \# \_ \{ \} \~{} \^{} \textbackslash % \< \> \" % TODO cannot be typeset
 \end{center}
 %
 have to be escaped.
@@ -251,30 +252,30 @@ The \texttt{itemize} environment is suitable for simple lists, the \texttt{enume
 enumerated lists, and the \texttt{description} environment for descriptions.
 
 \begin{enumerate}
-    \item You can nest the list environments to your taste:
-        \begin{itemize}
-            \item But it might start to look silly.
-            \item[-] With a dash.
-        \end{itemize}
-    \item Therefore remember: \label{remember}
-        \begin{description}
-            \item[Stupid] things will not become smart because they are in a list.
-            \item[Smart] things, though, can be presented beautifully in a list.
-        \end{description}
-    \item Technical note: Viewing this in Chrome, however, will show too much vertical space
-        at the end of a nested environment (see above). On top of that, margin collapsing for inline-block
-        boxes is not allowed. Maybe using \texttt{dl} elements is too complicated for this and a simple nested
-        \texttt{div} should be used instead.
+\item You can nest the list environments to your taste:
+\begin{itemize}
+\item But it might start to look silly.
+\item[-] With a dash.
+\end{itemize}
+\item Therefore remember: \label{remember}
+\begin{description}
+\item[Stupid] things will not become smart because they are in a list.
+\item[Smart] things, though, can be presented beautifully in a list.
+\end{description}
+\item Technical note: Viewing this in Chrome, however, will show too much vertical space
+at the end of a nested environment (see above). On top of that, margin collapsing for inline-block
+boxes is not allowed. Maybe using \texttt{dl} elements is too complicated for this and a simple nested
+\texttt{div} should be used instead.
 \end{enumerate}
 %
 Lists can be deeply nested:
 %
 \begin{itemize}
-  \item list text, level one
-    \begin{itemize}
-      \item list text, level two
-        \begin{itemize}
-          \item list text, level three
+\item list text, level one
+\begin{itemize}
+\item list text, level two
+\begin{itemize}
+\item list text, level three
 
             And a new paragraph can be started, too.
             \begin{itemize}
@@ -290,8 +291,9 @@ Lists can be deeply nested:
         \end{itemize}
       \item list text, level two
     \end{itemize}
-  \item list text, level one
-  \item list text, level one
+
+\item list text, level one
+\item list text, level one
 \end{itemize}
 
 \section{Mathematical Formulae}
@@ -301,6 +303,7 @@ $
 f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \, d\xi
 $
 as well as display math is supported:
+
 $$
 f(n) = \begin{cases} \frac{n}{2}, & \text{if } n\text{ is even} \\ 3n+1, & \text{if } n\text{ is odd} \end{cases}
 $$
@@ -309,9 +312,9 @@ $$
 
 Full $$\LaTeX$$ blocks are supported through [LaTeX JS](https://latex.js.org/){:target="\_blank"} library, which is still under development and supports only limited functionality (which is still pretty cool!) and does not allow fine-grained control of the layout, fonts, etc.
 
-*Note: We do not recommend using using LaTeX JS for writing lecture notes at this stage.*
+_Note: We do not recommend using using LaTeX JS for writing lecture notes at this stage._
 
-***
+---
 
 ## Print
 
