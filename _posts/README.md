@@ -32,6 +32,7 @@ $ bundle exec jekyll serve
 After that, you will be able to see a rendered version of the course webpage (with all your changes to the notes) by going to [http://localhost:4000](http://localhost:4000/).
 
 ### Write up lecture notes
+
 - Using the template, write up and add your notes to `_posts/yyyy-mm-dd-lecture-xx.md` and bibliography to `assets/bibliography/yyyy-mm-dd-lecture-xx.bib` (in the BibTeX format; here is [an example](https://github.com/adaptinfer/dgm-fall-2025/blob/master/assets/bibliography/2019-01-09-lecture-notes-template.bib)) in your fork of the repository.
 - When writing notes, you can use a combination of Markdown and HTML (the latter for more fine-grained rendering, if necessary).
   If you are not familiar with markdown, please spend 5 min looking at this [tutorial](https://commonmark.org/help/tutorial/index.html).

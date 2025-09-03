@@ -72,7 +72,6 @@
   lecturer: Prof. Lengerich
   title: <strong>Normalization / Initialization</strong>
 
-
 - date: 10/13
   lecturer: Prof. Lengerich
   title: <strong>Optimization, Learning Rates</strong>
@@ -82,7 +81,6 @@
   title: <strong>CNNs</strong>
   logistics: Project Proposal Due
 
-
 - date: 10/20
   lecturer: Prof. Lengerich
   title: <strong>Review</strong>
@@ -91,7 +89,6 @@
   title: <strong>Midterm Exam</strong>
 
 - title: "Module 3: Intro to Generative Models"
-
 
 - date: 10/27
   lecturer: Prof. Lengerich
