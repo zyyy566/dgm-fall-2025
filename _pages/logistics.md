@@ -4,7 +4,7 @@ permalink: /logistics/
 title: Logistics
 ---
 
-- (The list will be replaced with the table of contents.)
+* (The list will be replaced with the table of contents.)
   {:toc}
 
 ---
@@ -12,7 +12,7 @@ title: Logistics
 ### Course Information
 
 - **Meeting Times:** Monday/Wednesday 8:00-9:15 AM
-- **Location:** Morgridge 1524.
+- **Location:** Morgridge 1524
 - **Instructor:** Prof. Ben Lengerich, lengerich@wisc.edu
 - **TA:** Baiheng Chen, bchen342@wisc.edu
 
@@ -21,7 +21,7 @@ title: Logistics
 ### Course Materials
 
 - **Website:** [Course Website](https://adaptinfer.org/dgm-fall-2025)
-- **Submission Platform:** Canvas
+- **Submission Platform:** [Canvas](https://canvas.wisc.edu/courses/479352)
 
 ---
 
@@ -33,7 +33,15 @@ TBD
 
 ## Grading
 
-TBD
+The class requirements and grading breakdown are as follows:
+
+- Homework Assignments (20%)
+- Midterm Exam (20%)
+- Final Exam (30%)
+- Final Project (30%)
+
+**Extra Credit:** Students can earn up to 5% extra credit for writing high-quality lecture notes.
+
 
 ### Homework Assignments
 
@@ -49,18 +57,25 @@ There will be regular homework assignments to reinforce core concepts and comput
 
 ### Exams
 
-TBD.
+- **Midterm Exam:** An in-class exam will take place on October 22.
+- **Final Exam.** The final exam will take place December 17.
 
 ---
 
 ### Final Project
 
-TBD.
+The final project will be completed in groups of up to four students. It will include:
+- **Proposal (5%)**: Due October 17, 2025.
+- **Midway Report (5%)**: Due November 7, 2025.
+- **Presentation (5%)**: During the final week of class.
+- **Final Report (15%)**: Due December 12, 2025.
 
 ---
 
 ### Extra Credit
 
-TBD.
+Students can volunteer to write lecture notes for a class session. Notes must be clear, comprehensive, and well-organized. Approved notes will earn up to 2% extra credit. See [here](https://github.com/AdaptInfer/dgm-fall-2025/blob/master/_posts/README.md) for details on how to submit.
+
+An additional 1% may be earned by submitting improvements to previously-posted lecture notes.
 
 ---
