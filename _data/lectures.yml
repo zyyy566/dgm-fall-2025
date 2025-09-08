@@ -40,7 +40,6 @@
     <strong>Parameter Optimization and Gradient Descent</strong>
   slides: ""
   readings:
-  logistics: HW2 Out
 
 - date: 9/22
   lecturer: Prof. Lengerich
@@ -48,6 +47,7 @@
     <strong>Automatic differentiation with PyTorch</strong>
   slides: ""
   readings:
+  logistics: HW2 Out
 
 - date: 9/24
   lecturer: Prof. Lengerich
@@ -62,11 +62,11 @@
 - date: 10/1
   lecturer: Prof. Lengerich
   title: <strong>Multi-layer perceptrons and backpropagation</strong>
-  logistics: HW3 Out
 
 - date: 10/6
   lecturer: Prof. Lengerich
   title: <strong>Regularization</strong>
+  logistics: HW3 Out
 
 - date: 10/8
   lecturer: Prof. Lengerich
