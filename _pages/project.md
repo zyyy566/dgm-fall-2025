@@ -5,7 +5,6 @@ title: Course Project
 description: Guidelines and deliverables for course projects
 ---
 
-
 Your class project offers an opportunity to apply deep learning / generative models to real-world problems. Projects will be completed in **teams of 2-4 students** and are worth **30% of your final grade**, consisting of the following deliverables:
 
 1. **Proposal** (5%): 2 pages, excluding references.
@@ -26,9 +25,11 @@ Teams of 3-4 students are strongly encouraged. Once your team is formed, email t
 ## Deliverables and Deadlines
 
 ### **Proposal**
+
 **Due:** Friday, October 17, 2025, at 11:59 PM via Canvas.
 
 - **Content**:
+
   - Project title and team member list.
   - Problem statement and motivation (½ page).
   - Literature review of at least four relevant papers (~1 page).
@@ -43,16 +44,19 @@ Teams of 3-4 students are strongly encouraged. Once your team is formed, email t
 ---
 
 ### **Midway Report**
+
 **Due:** Friday, November 7, 2025, at 11:59 PM via Canvas.
 
 - **Purpose**:
-This report ensures you’ve made **real progress** on your project. By now, you should have:
+  This report ensures you’ve made **real progress** on your project. By now, you should have:
+
   - Implemented an initial version of your model or experiments.
   - Run at least some tests—even if they didn’t work.
   - Identified challenges and next steps.
-This is not just a plan—it must reflect **actual work done** so far.
+    This is not just a plan—it must reflect **actual work done** so far.
 
 - **Format & Length**:
+
   - **4 full pages**, excluding references. May **slightly spill onto a fifth page**, but be concise.
   - Use the **ICML template** (single-column format).
   - References must be on a separate page.
@@ -88,9 +92,11 @@ This is not just a plan—it must reflect **actual work done** so far.
 ---
 
 ### **Final Report**
+
 **Due:** Friday, December 12, 2025, at 11:59 PM via Canvas.
 
 - **Content**:
+
   - ICML-style paper (8 pages).
   - Sections: Introduction, Background & Related Work, Methods, Experiments, and Conclusions.
 
@@ -104,6 +110,7 @@ This is not just a plan—it must reflect **actual work done** so far.
 ---
 
 ### **In-Class Presentation**
+
 **Date:** Monday and Wednesday, December 8 and 10, 2025.
 
 - **Format**: Each team will deliver a **7-minute presentation** in class, summarizing their project. Presentations will include a brief introduction, methods overview, key findings, and future directions.
@@ -112,4 +119,3 @@ This is not just a plan—it must reflect **actual work done** so far.
   - 30%: Clarity and engagement of presentation.
   - 40%: Depth and quality of content.
   - 30%: Use of visuals and adherence to time limits.
-

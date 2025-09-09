@@ -4,7 +4,7 @@ permalink: /logistics/
 title: Logistics
 ---
 
-* (The list will be replaced with the table of contents.)
+- (The list will be replaced with the table of contents.)
   {:toc}
 
 ---
@@ -42,7 +42,6 @@ The class requirements and grading breakdown are as follows:
 
 **Extra Credit:** Students can earn up to 5% extra credit for writing high-quality lecture notes.
 
-
 ### Homework Assignments
 
 There will be regular homework assignments to reinforce core concepts and computational skills. These assignments will include both theoretical problems and programming exercises.
@@ -65,6 +64,7 @@ There will be regular homework assignments to reinforce core concepts and comput
 ### Final Project
 
 The final project will be completed in groups of up to four students. It will include:
+
 - **Proposal (5%)**: Due October 17, 2025.
 - **Midway Report (5%)**: Due November 7, 2025.
 - **Presentation (5%)**: During the final week of class.
