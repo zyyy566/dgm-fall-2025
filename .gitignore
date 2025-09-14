@@ -10,3 +10,5 @@ _site/
 
 .idea/
 .ruby-version
+
+/vendor/
