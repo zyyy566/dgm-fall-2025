@@ -38,7 +38,7 @@
   lecturer: Prof. Lengerich
   title: >
     <strong>Parameter Optimization and Gradient Descent</strong>
-  slides: ""
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_05_gradient_descent.pdf"
   readings:
 
 - date: 9/22
