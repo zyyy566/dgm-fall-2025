@@ -1,4 +1,16 @@
 ---
+title: "Lecture 05"
+layout: distill
+date: "2025-09-17"
+description: Fitting Neurons with Gradient Descent
+lecturers:
+- name: Ben Lengerich
+  url: https://lengerichlab.github.io/
+authors:
+- name: Anna Schellin
+- name: Yuheng Mao
+- name: Flora He
+---
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ## Lecture Overview
 
