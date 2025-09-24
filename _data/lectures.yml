@@ -30,7 +30,7 @@
   title: >
     <strong>Single-layer networks</strong>
   slides: "/dgm-fall-2025/assets/lectures/Lecture_04_SingleLayer.pdf"
-  notes: ""
+  notes: "/dgm-fall-2025/notes/lecture-04"
   readings:
   logistics:
 
@@ -39,19 +39,22 @@
   title: >
     <strong>Parameter Optimization and Gradient Descent</strong>
   slides: "/dgm-fall-2025/assets/lectures/Lecture_05_gradient_descent.pdf"
+  notes: "/dgm-fall-2025/notes/lecture-05"
   readings:
 
 - date: 9/22
   lecturer: Prof. Lengerich
   title: >
     <strong>Automatic differentiation with PyTorch</strong>
-  slides: ""
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_06_autodiff.pdf"
   readings:
-  logistics: HW2 Out
 
 - date: 9/24
   lecturer: Prof. Lengerich
   title: <strong>Cluster and cloud computing resources</strong>
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_07_cloud.pdf"
+  readings:
+  logistics: HW2 Out
 
 - title: "Module 2: Neural Networks"
 
