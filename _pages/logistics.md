@@ -27,7 +27,7 @@ title: Logistics
 
 ### Readings
 
-TBD
+See the [lecture schedule](./dgm-fall-2025/lectures) for a list of readings.
 
 ---
 
