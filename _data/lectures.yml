@@ -47,12 +47,14 @@
   title: >
     <strong>Automatic differentiation with PyTorch</strong>
   slides: "/dgm-fall-2025/assets/lectures/Lecture_06_autodiff.pdf"
+  notes: "/dgm-fall-2025/notes/lecture-06"
   readings:
 
 - date: 9/24
   lecturer: Prof. Lengerich
   title: <strong>Cluster and cloud computing resources</strong>
   slides: "/dgm-fall-2025/assets/lectures/Lecture_07_cloud.pdf"
+  notes: "/dgm-fall-2025/notes/lecture-07"
   readings:
   logistics: HW2 Out
 
@@ -62,6 +64,7 @@
   lecturer: Prof. Lengerich
   title: <strong>Multinomial logistic regression</strong>
   slides: "/dgm-fall-2025/assets/lectures/Lecture_08_LogisticRegression.pdf"
+  notes: "/dgm-fall-2025/notes/lecture-08"
 
 - date: 10/1
   lecturer: Prof. Lengerich
