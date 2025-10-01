@@ -24,6 +24,7 @@
   slides: "/dgm-fall-2025/assets/lectures/Lecture_03_StatsReview.pdf"
   notes: "/dgm-fall-2025/notes/lecture-03"
   readings:
+    - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/linear_algebra.html">Deep learning book</a>, Ch. 2
 
 - date: 9/15
   lecturer: Prof. Lengerich
@@ -32,6 +33,7 @@
   slides: "/dgm-fall-2025/assets/lectures/Lecture_04_SingleLayer.pdf"
   notes: "/dgm-fall-2025/notes/lecture-04"
   readings:
+    - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/ml.html">Deep learning book</a>, Ch. 5
   logistics:
 
 - date: 9/17
@@ -119,6 +121,8 @@
   lecturer: Prof. Lengerich
   title: <strong>Factor Analysis, Autoencoders, VAEs</strong>
   readings:
+    - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/linear_factors.html">Deep learning book</a>, Ch. 13
+    - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/autoencoders.html">Deep learning book</a>, Ch. 14
     - Kingma and Welling, <a href="https://arxiv.org/abs/1312.6114">Variational Autoencoders</a>
 
 - date: 11/3
@@ -141,6 +145,7 @@
   title: <strong>Sequence Learning with RNNs</strong>
   readings:
     - Pascanu, Mikolov, Bengio, <a href="http://proceedings.mlr.press/v28/pascanu13.pdf">On the difficulty of training recurrent neural networks</a>
+    - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/rnn.html">Deep learning book</a>, Ch. 10
   logistics: HW4 Out
 
 - date: 11/12
