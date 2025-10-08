@@ -87,6 +87,7 @@
 - date: 10/8
   lecturer: Prof. Lengerich
   title: <strong>Normalization / Initialization</strong>
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_11_normalization.pdf"
   readings:
     - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/guidelines.html">Deep learning book</a>, Ch. 11
 
