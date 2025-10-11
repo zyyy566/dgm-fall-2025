@@ -1,0 +1,260 @@
+---
+layout: distill
+title: Lecture Notes Template
+description: An example of a distill-style lecture notes that showcases the main elements.
+date: 2019-01-09
+
+lecturers:
+  - name: Ben Lengerich
+    url: "https://lengerichlab.github.io/"
+
+authors:
+  - name: xinyu Pan
+    url: "#" # optional URL to the author's homepage
+  - name: 
+    url: "#"
+  - name: Author 3
+    url: "#"
+
+editors:
+  - name: Editor 1 # editor's full name
+    url: "#" # optional URL to the editor's homepage
+
+abstract: >
+  An example abstract block
+---
+# Lecture Notes: Normalization and Initialization in Deep Learning
+
+> Based on lecture transcript and accompanying slides.
+> Topic: *Normalization and Initialization* (Gordon, Lecture 11).
+> Course context: Regularization, stability, and optimization in neural networks.&#x20;
+
+---
+
+## 1. Research Projects and Reading Papers
+
+### 1.1 Choosing a Project Direction
+
+Before designing architectures (e.g., transformers), it is recommended to **first decide on an application domain**.
+
+* Select an **area of interest** such as *medical image analysis*, *speech recognition*, or *sequence modeling*.
+* Perform a **literature review** of approximately 10 recent papers within that field.
+* Identify the **model architectures and methods** employed.
+* Even without full comprehension, one can **replicate** or **slightly modify** those studies to form a meaningful project.
+
+### 1.2 Critical and Optimistic Reading
+
+Academic papers, even from leading institutions, invariably contain flaws.
+The productive mindset combines:
+
+* **Critical analysis**: Identifying gaps, assumptions, or methodological weaknesses.
+* **Optimism and curiosity**: Recognizing that *“all papers are wrong, but some are useful.”*
+  This balance encourages innovation while maintaining intellectual humility.
+
+---
+
+## 2. Motivation for Normalization
+
+### 2.1 Optimization Landscape Intuition
+
+Training via **gradient descent** can be visualized as movement over a *loss surface*.
+
+* When the surface is **anisotropic** or *elongated*, gradient updates oscillate and converge slowly.
+* Proper normalization produces a **more isotropic (spherical)** loss contour, ensuring direct descent toward the minimum.
+
+### 2.2 Deep Learning Context
+
+* Input features can be normalized directly.
+* However, **hidden layer activations** evolve during training, altering their distribution dynamically.
+* This motivates *internal normalization* techniques such as **Batch Normalization**.
+
+---
+
+## 3. Batch Normalization (BatchNorm)
+
+### 3.1 Conceptual Overview
+
+Proposed by Ioffe and Szegedy (2015), Batch Normalization addresses instability in training deep networks.
+It normalizes **intermediate activations** within each **mini-batch** to stabilize distributions.
+
+Given activations $z_i$ for a layer across a mini-batch of size $n$:
+
+$$
+\mu_B = \frac{1}{n}\sum_{i=1}^{n} z_i, \qquad 
+\sigma_B^2 = \frac{1}{n}\sum_{i=1}^{n}(z_i - \mu_B)^2
+$$
+
+Normalization:
+
+$$
+\hat{z}_i = \frac{z_i - \mu_B}{\sqrt{\sigma_B^2 + \varepsilon}}
+$$
+
+Affine transformation (learnable scaling and shifting):
+
+$$
+y_i = \gamma \hat{z}_i + \beta
+$$
+
+* $\gamma$ and $\beta$ are learnable parameters allowing the network to **recover the optimal scale and bias**.
+* This mechanism maintains flexibility while mitigating **exploding** or **vanishing gradients**.
+
+---
+
+### 3.2 Computation Graph Integration
+
+BatchNorm fits naturally into the computation graph:
+
+1. Linear transformation: $z = Wx + b$
+2. Normalization: $\hat{z}$
+3. Rescaling and shifting: $y = \gamma \hat{z} + \beta$
+4. Nonlinear activation: $a = f(y)$
+
+Since all operations are differentiable, **backpropagation** proceeds seamlessly.
+
+---
+
+### 3.3 Training vs. Inference
+
+* **Training phase**: Uses *mini-batch statistics* ($\mu_B, \sigma_B^2$).
+* **Inference phase**: Employs *moving averages* of $\mu$ and $\sigma^2$ accumulated during training.
+  This ensures consistent behavior when batch sizes differ or when predictions are made one sample at a time.
+
+---
+
+### 3.4 Empirical Benefits
+
+1. **Accelerated convergence** through more stable gradients.
+2. **Mitigation** of internal distribution shifts.
+3. **Enables higher learning rates** and deeper networks.
+4. Often improves **generalization** due to mild regularization effects.
+
+---
+
+### 3.5 Theoretical Explanations (Multiple Perspectives)
+
+| Year      | Explanation                                                   | Source / Insight             |
+| --------- | ------------------------------------------------------------- | ---------------------------- |
+| 2015      | *Internal Covariate Shift* hypothesis                         | Original BN paper            |
+| 2018–2019 | *Smoothing of optimization landscape*                         | MIT study (Santurkar et al.) |
+| 2018      | *Implicit regularization effect*                              | Empirical observations       |
+| 2019      | *Stabilized gradient dynamics allowing larger learning rates* | Theoretical reinterpretation |
+
+Despite differing theoretical justifications, all confirm that BN improves training stability and speed.
+
+---
+
+### 3.6 Practical Considerations
+
+* **Batch size sensitivity**: Too small → unstable statistics.
+* **Order of operations**: Commonly `Linear/Conv → BatchNorm → ReLU`; variations may be task-dependent.
+* **PyTorch Implementation**: `torch.nn.BatchNorm1d/2d/3d`; ensure proper use of `model.train()` and `model.eval()`.
+* **Alternative Normalization Methods**:
+
+  * *Layer Normalization* (LN): Across features of a single sample; suitable for sequence models and transformers.
+  * *Instance Normalization* (IN): Across spatial dimensions per sample; often used in style transfer.
+  * *Group Normalization* (GN): Across grouped channels; stable for small batches.
+
+---
+
+## 4. Initialization of Network Weights
+
+### 4.1 Importance of Initialization
+
+Improper initialization can result in:
+
+* **Symmetry** among neurons (if all weights equal).
+* **Vanishing or exploding gradients**, especially in deep networks.
+  Therefore, initialization affects both **convergence rate** and **final performance**.
+
+---
+
+### 4.2 Xavier (Glorot) Initialization
+
+Designed for activation functions centered near zero (e.g., *tanh*).
+
+$$
+Var(W) = \frac{1}{n_{in} + n_{out}}
+$$
+
+or equivalently:
+
+$$
+W \sim U\left[-\sqrt{\frac{6}{n_{in}+n_{out}}}, \sqrt{\frac{6}{n_{in}+n_{out}}}\right]
+$$
+
+Ensures that the variance of activations remains approximately constant across layers, avoiding saturation.
+
+---
+
+### 4.3 He (Kaiming) Initialization
+
+Tailored for **ReLU** activations, which are non-symmetric around zero.
+
+$$
+Var(W) = \frac{2}{n_{in}}
+$$
+
+or
+
+$$
+W \sim \mathcal{N}\left(0, \frac{2}{n_{in}}\right)
+$$
+
+This scaling compensates for the half-rectification effect of ReLU and maintains activation variance consistency.
+
+* **PyTorch default**: Linear and convolutional layers use He initialization by default.
+
+---
+
+### 4.4 Architectural Dependence
+
+The optimal initialization scheme may depend on:
+
+* Network **depth** and **width**.
+* **Nonlinearity** used.
+* Presence of **residual or skip connections**.
+  Deep architectures often rely on *residual connections* to alleviate gradient vanishing, beyond what normalization or initialization alone can achieve.
+
+---
+
+## 5. Gradient Stability and Residual Structures
+
+To combat vanishing/exploding gradients:
+
+* Introduce **residual (skip) connections** or **scaled shortcuts** that enable direct gradient flow.
+* Such designs have become integral to modern architectures (e.g., ResNets, Transformers).
+
+---
+
+## 6. Implementation Summary
+
+### 6.1 Normalization
+
+| Technique        | Applied Axis          | Common Use       | Advantages        | Limitations                 |
+| ---------------- | --------------------- | ---------------- | ----------------- | --------------------------- |
+| **BatchNorm**    | Across mini-batch     | CNNs             | Fast convergence  | Requires large batch        |
+| **LayerNorm**    | Across features       | Transformers     | Batch-independent | Slightly slower             |
+| **InstanceNorm** | Across spatial dims   | Style transfer   | Instance-specific | Limited effect on stability |
+| **GroupNorm**    | Across channel groups | Small-batch CNNs | Stable            | Needs tuning of group size  |
+
+---
+
+### 6.2 Initialization Quick Reference
+
+| Scheme              | Suitable Activation | Formula                     | Key Idea                       |
+| ------------------- | ------------------- | --------------------------- | ------------------------------ |
+| **Xavier (Glorot)** | tanh / sigmoid      | $Var(W)=1/(n_{in}+n_{out})$ | Equalize activation variance   |
+| **He (Kaiming)**    | ReLU / LeakyReLU    | $Var(W)=2/n_{in}$           | Compensate for ReLU truncation |
+
+---
+
+## 7. Key Takeaways
+
+1. **Normalization** stabilizes internal representations, accelerates convergence, and improves training reliability.
+2. **BatchNorm** remains the most effective and widely used technique despite incomplete theoretical justification.
+3. **Initialization** directly influences optimization trajectory; **Xavier** and **He** methods are standard baselines.
+4. **Residual connections** further enhance gradient flow, crucial for very deep models.
+5. Understanding and controlling the interplay between **normalization, initialization, and architecture** is central to modern deep learning engineering.
+
+---
