@@ -94,6 +94,7 @@
 - date: 10/13
   lecturer: Prof. Lengerich
   title: <strong>Optimization, Learning Rates</strong>
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_12_optimization.pdf"
   readings:
     - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/optimization.html">Deep learning book</a>, Ch. 8
 
@@ -184,12 +185,13 @@
   readings:
     - Raffel et al., <a href="https://arxiv.org/abs/1910.10683">Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</a>
     - Ouyang et al., <a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a>
-    - Li & Liang, <a href="https://arxiv.org/abs/2101.00190">Prefix-tuning - Optimizing continuous prompts for generation</a>
   logistics: HW5 Out
 
 - date: 11/26
   lecturer: Prof. Lengerich
   title: <strong>Prompts and In-context learning</strong>
+  readings:
+    - Li & Liang, <a href="https://arxiv.org/abs/2101.00190">Prefix-tuning - Optimizing continuous prompts for generation</a>
 
 - date: 12/1
   lecturer: Prof. Lengerich
