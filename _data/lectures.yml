@@ -81,6 +81,7 @@
   title: <strong>Regularization</strong>
   logistics: HW3 Out
   slides: "/dgm-fall-2025/assets/lectures/Lecture_10_regularization.pdf"
+  notes: "/dgm-fall-2025/notes/lecture-10"
   readings:
     - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/regularization.html">Deep learning book</a>, Ch. 7
 
@@ -102,6 +103,7 @@
   lecturer: Prof. Lengerich
   title: <strong>CNNs</strong>
   logistics: Project Proposal Due
+  slides: "/dgm-fall-2025/assets/lectures/Lecture_13_cnns.pdf"
   readings:
     - Goodfellow et al., <a href="https://www.deeplearningbook.org/contents/convnets.html">Deep learning book</a>, Ch. 9
 
